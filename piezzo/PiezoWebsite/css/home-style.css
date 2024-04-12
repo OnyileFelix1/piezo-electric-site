@@ -1,0 +1,105 @@
+@import url("./utitlities.css");
+
+.header {
+  width: 100%;
+  height: 3.6rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  animation: fade-down 1s ease;
+  margin-top: 2rem;
+}
+
+.image-box {
+  width: 3.6rem;
+  height: 100%;
+}
+
+.image-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.text-box p {
+  opacity: 0.7;
+}
+
+.content {
+  margin-top: 1rem;
+  animation: fade-in 1s ease;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.innercontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.innercontent:active {
+  transform: scale(0.9) translateY(-5px);
+  transition: none;
+  filter: brightness(0.5);
+}
+
+.innercontent i {
+  margin-left: -5px;
+}
+
+.inner-title {
+  font-weight: 600;
+}
+
+.inner-info {
+  font-size: 0.56rem;
+  opacity: 0.7;
+  font-family: "Montserrat";
+}
+.contot {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.achieve {
+  margin-top: 2rem;
+  animation: fade-up 1s ease;
+}
+
+.main-list {
+  padding-bottom: 4rem;
+  margin-top: 0rem;
+  overflow-y: scroll;
+  height: 60lvh;
+}
+
+.main-item {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 1.6rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.4rem 1.5rem;
+}
+
+.main-item i {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+.main-title {
+  font-weight: 700;
+}
+
+.main-info {
+  font-size: 0.65rem;
+  font-family: "Montserrat";
+  opacity: 0.6;
+  font-weight: 400;
+}

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+:root {
+  --border-color: rgba(0, 0, 0, 0.2);
+  --accent-color: rgb(26, 110, 171);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  transition: 0.3s ease-in;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome an*/
+}
+
+.nav-sec {
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--border-color);
+  height: 2rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+input:focus {
+  border-color: var(--accent-color);
+}
+
+body {
+  padding: 1rem;
+  width: 100lvw;
+  height: 100lvh;
+}
+
+main {
+  max-width: 400px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  height: 2.2rem;
+  background-color: var(--accent-color);
+  border-radius: 1rem;
+  outline: 0;
+  border: 0;
+  color: #fff;
+}
+
+button:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+.nav-bar {
+  width: 100lvw;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  z-index: 300;
+  max-width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-bar {
+  font-size: 0.85rem;
+}
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.logo-img {
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.faded {
+  opacity: 0.5;
+  color: #000;
+}
+
+.toggle-switch {
+  width: 2.1rem;
+  height: 1.2rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
+}
+
+.toggle-ball {
+  height: 0.8rem;
+  background-color: #fff;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.toggle-on {
+  background-color: rgb(28, 179, 28);
+}
+
+.toggle-on .toggle-ball {
+  right: 0.25rem;
+}
+.toggle-off {
+  background-color: rgb(227, 18, 18);
+}
+
+.toggle-off .toggle-ball {
+  left: 0.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0s;
+    transform: translateY(30rem);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
