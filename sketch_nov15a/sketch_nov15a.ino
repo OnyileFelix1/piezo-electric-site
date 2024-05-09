@@ -3,7 +3,7 @@ const int pirPin = 2; // PIR sensor connected to digital pin 2
 void setup() {
   Serial.begin(9600); // Initialize serial communication
   pinMode(pirPin, INPUT); // Set PIR pin as input
-
+}
 void loop() {
   int motion = digitalRead(pirPin); // Read PIR sensor data
 
